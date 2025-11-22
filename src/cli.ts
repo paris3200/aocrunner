@@ -6,7 +6,7 @@ import updateReadme from "./actions/updateReadMe.js"
 import dotenv from "dotenv"
 import version from "./version.js"
 
-dotenv.config()
+dotenv.config({ quiet: true })
 
 const commandPos = process.argv.findIndex((arg) =>
   ["init", "day", "build", "update:readme"].includes(arg),
