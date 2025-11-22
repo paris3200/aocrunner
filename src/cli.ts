@@ -29,11 +29,11 @@ switch (String(command || "").toLowerCase()) {
     break
   }
   case "day": {
-    dev(args[0])
+    await dev(args[0])
     break
   }
   case "build": {
-    build()
+    await build()
     break
   }
   case "update:readme": {
